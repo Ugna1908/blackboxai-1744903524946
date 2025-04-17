@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Gokuldham Gau Sewa Mahatirth</title>
+    <meta name="description" content="Support Gokuldham Gau Sewa Mahatirth's mission by donating for cow welfare. Your contribution helps provide medical care, food, and shelter to cows in need.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e67e22',
+                        secondary: '#d35400',
+                        accent: '#f39c12'
+                    }
+                },
+                fontFamily: {
+                    sans: ['Poppins', 'sans-serif']
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-3xl font-bold text-primary">
+                        Gokuldham Gau Sewa Mahatirth
+                    </h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a></li>
+                        <li><a href="about.html" class="nav-link text-gray-700 hover:text-primary font-medium">About Us</a></li>
+                        <li><a href="blog.html" class="nav-link text-gray-700 hover:text-primary font-medium">What's New</a></li>
+                        <li><a href="gallery.html" class="nav-link text-gray-700 hover:text-primary font-medium">Gallery</a></li>
+                        <li><a href="video-gallery.html" class="nav-link text-gray-700 hover:text-primary font-medium">Videos</a></li>
+                        <li><a href="contact.html" class="nav-link text-gray-700 hover:text-primary font-medium">Contact Us</a></li>
+                        <li><a href="donation.html" class="donate-btn px-6 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300 ease-in-out transform hover:-translate-y-1">Donate Now</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars text-2xl text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="navbar-links md:hidden mt-4 hidden">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="index.html" class="block text-gray-700 hover:text-primary font-medium py-2">Home</a></li>
+                    <li><a href="about.html" class="block text-gray-700 hover:text-primary font-medium py-2">About Us</a></li>
+                    <li><a href="blog.html" class="block text-gray-700 hover:text-primary font-medium py-2">What's New</a></li>
+                    <li><a href="gallery.html" class="block text-gray-700 hover:text-primary font-medium py-2">Gallery</a></li>
+                    <li><a href="video-gallery.html" class="block text-gray-700 hover:text-primary font-medium py-2">Videos</a></li>
+                    <li><a href="contact.html" class="block text-gray-700 hover:text-primary font-medium py-2">Contact Us</a></li>
+                    <li><a href="donation.html" class="donate-btn inline-block px-6 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300 mt-2">Donate Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Support Our Cause</h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Your generous donation helps us continue our mission of providing care to cows in need.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Donation Categories Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Donation Categories</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Choose a donation category that resonates with you and make a difference in the lives of cows.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Donation Category 1 -->
+                    <div class="card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                        <img src="https://www.gokuldhammahatirth.org/upload/PackageMaster/BhumiDaan.jpg" alt="Land Donation" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Land Donation</h3>
+                            <p class="text-gray-600 mb-4">Considering the number of cows coming to the gaushala, land is needed for new gaushala. Therefore donate for land purchasing.</p>
+                            <a href="#donation-form" class="inline-block px-4 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Donation Category 2 -->
+                    <div class="card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                        <img src="https://www.gokuldhammahatirth.org/upload/PackageMaster/tin-roof.jpg" alt="Shelter Donation" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Shelter Donation</h3>
+                            <p class="text-gray-600 mb-4">Provide shelter to destitute, helpless, orphan gomata by giving donation for goshala construction.</p>
+                            <a href="#donation-form" class="inline-block px-4 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Donation Category 3 -->
+                    <div class="card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                        <img src="https://www.gokuldhammahatirth.org/upload/PackageMaster/gdurgent231122.png" alt="Medical & Food Kits" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Medical & Food Kits</h3>
+                            <p class="text-gray-600 mb-4">You can support our cause by donating medical & food kits. Want to save many more gauvansh by giving the right kind of medical treatment.</p>
+                            <a href="#donation-form" class="inline-block px-4 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Donation Category 4 -->
+                    <div class="card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                        <img src="https://www.gokuldhammahatirth.org/upload/PackageMaster/GreenGrass.png" alt="Gou Grass Seva" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Gou Grass Seva</h3>
+                            <p class="text-gray-600 mb-4">Gou grass Seva is considered as one of the most revered services. Your donation will help to feed holy cows.</p>
+                            <a href="#donation-form" class="inline-block px-4 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Donation Category 5 -->
+                    <div class="card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                        <img src="https://www.gokuldhammahatirth.org/upload/PackageMaster/adopt_a_cow.jpeg" alt="Adopt A Cow" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Adopt A Cow</h3>
+                            <p class="text-gray-600 mb-4">You can support our cause by adopting a cow. Your contribution will help provide for their food, shelter, and medical needs.</p>
+                            <a href="#donation-form" class="inline-block px-4 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Donation Category 6 -->
+                    <div class="card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                        <img src="https://www.gokuldhammahatirth.org/upload/PackageMaster/Ambulance.jpg" alt="Ambulance Donation" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Ambulance Donation</h3>
+                            <p class="text-gray-600 mb-4">Donation for ambulance will help to increase the service to carry needy cows from anywhere of India. Chaff cutter, JCB and trolly is required in gaushala.</p>
+                            <a href="#donation-form" class="inline-block px-4 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Donation Form Section -->
+        <section id="donation-form" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Make Your Donation</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Every contribution, big or small, makes a difference in the lives of cows.</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                    <form class="donation-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name*</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address*</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number*</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="pan" class="block text-gray-700 font-medium mb-2">PAN Number (For Tax Benefit)</label>
+                                <input type="text" id="pan" name="pan" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <label class="block text-gray-700 font-medium mb-2">Select Donation Category*</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-md cursor-pointer hover:border-primary transition duration-300">
+                                    <input type="radio" name="category" value="land" class="text-primary focus:ring-primary">
+                                    <span>Land Donation</span>
+                                </label>
+                                <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-md cursor-pointer hover:border-primary transition duration-300">
+                                    <input type="radio" name="category" value="shelter" class="text-primary focus:ring-primary">
+                                    <span>Shelter Donation</span>
+                                </label>
+                                <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-md cursor-pointer hover:border-primary transition duration-300">
+                                    <input type="radio" name="category" value="medical" class="text-primary focus:ring-primary">
+                                    <span>Medical & Food Kits</span>
+                                </label>
+                                <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-md cursor-pointer hover:border-primary transition duration-300">
+                                    <input type="radio" name="category" value="grass" class="text-primary focus:ring-primary">
+                                    <span>Gou Grass Seva</span>
+                                </label>
+                                <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-md cursor-pointer hover:border-primary transition duration-300">
+                                    <input type="radio" name="category" value="adopt" class="text-primary focus:ring-primary">
+                                    <span>Adopt A Cow</span>
+                                </label>
+                                <label class="flex items-center space-x-2 p-3 border border-gray-300 rounded-md cursor-pointer hover:border-primary transition duration-300">
+                                    <input type="radio" name="category" value="ambulance" class="text-primary focus:ring-primary">
+                                    <span>Ambulance Donation</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <label class="block text-gray-700 font-medium mb-2">Donation Amount*</label>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-4">
+                                <button type="button" class="amount-option p-3 border border-gray-300 rounded-md text-center hover:border-primary hover:bg-primary hover:text-white transition duration-300" data-amount="501">₹501</button>
+                                <button type="button" class="amount-option p-3 border border-gray-300 rounded-md text-center hover:border-primary hover:bg-primary hover:text-white transition duration-300" data-amount="1001">₹1001</button>
+                                <button type="button" class="amount-option p-3 border border-gray-300 rounded-md text-center hover:border-primary hover:bg-primary hover:text-white transition duration-300" data-amount="2100">₹2100</button>
+                                <button type="button" class="amount-option p-3 border border-gray-300 rounded-md text-center hover:border-primary hover:bg-primary hover:text-white transition duration-300" data-amount="5100">₹5100</button>
+                                <button type="button" class="amount-option p-3 border border-gray-300 rounded-md text-center hover:border-primary hover:bg-primary hover:text-white transition duration-300" data-amount="11000">₹11000</button>
+                                <button type="button" class="amount-option p-3 border border-gray-300 rounded-md text-center hover:border-primary hover:bg-primary hover:text-white transition duration-300" data-amount="21000">₹21000</button>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="amount_type" value="custom" class="text-primary focus:ring-primary">
+                                    <span>Custom Amount</span>
+                                </label>
+                                <input type="number" class="custom-amount px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary" placeholder="Enter Amount">
+                            </div>
+                            <input type="hidden" name="amount" value="">
+                        </div>
+                        
+                        <div class="mb-8">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary"></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="inline-block px-8 py-3 bg-primary text-white font-medium rounded-full hover:bg-secondary transition duration-300 transform hover:-translate-y-1">
+                                Proceed to Payment <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bank Details Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Bank Details</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">You can also donate directly to our bank account.</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <ul class="space-y-4">
+                                    <li class="flex">
+                                        <span class="font-semibold min-w-[120px]">Name:</span>
+                                        <span>Gokul Dham Gau Sewa Mahatirth</span>
+                                    </li>
+                                    <li class="flex">
+                                        <span class="font-semibold min-w-[120px]">A/C No.:</span>
+                                        <span>918020104471089</span>
+                                    </li>
+                                    <li class="flex">
+                                        <span class="font-semibold min-w-[120px]">IFSC Code:</span>
+                                        <span>UTIB0000717</span>
+                                    </li>
+                                    <li class="flex">
+                                        <span class="font-semibold min-w-[120px]">Branch Name:</span>
+                                        <span>JHAJJAR</span>
+                                    </li>
+                                    <li class="flex">
+                                        <span class="font-semibold min-w-[120px]">Bank Name:</span>
+                                        <span>Axis Bank</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <img src="https://www.gokuldhammahatirth.org/assets_site/img/QR-Code100.jpg" alt="QR Code" class="h-48">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Donors Say</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Read what our donors have to say about their experience donating to Gokuldham.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="testimonial bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl mr-4">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Rahul Sharma</h4>
+                                <p class="text-sm text-gray-500">Regular Donor</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Donating to Gokuldham gives me immense satisfaction. Knowing that my contribution helps these gentle creatures receive proper care makes me happy."</p>
+                    </div>
+                    
+                    <div class="testimonial bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl mr-4">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Priya Patel</h4>
+                                <p class="text-sm text-gray-500">Monthly Donor</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"I have been donating monthly to Gokuldham for the past two years. The transparency in how my donations are used gives me confidence in supporting their cause."</p>
+                    </div>
+                    
+                    <div class="testimonial bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl mr-4">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Amit Verma</h4>
+                                <p class="text-sm text-gray-500">Corporate Donor</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Our company has partnered with Gokuldham for cow welfare initiatives. The dedication of their team and the impact they create is truly commendable."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>GOKUL DHAM GAU SEWA MAHATIRTH, NANGLA KUTANI ROAD DADRI TOE, JHAJJAR, 124103, HARYANA, INDIA</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <a href="tel:8199821024" class="hover:text-primary">8199821024, 9459012222</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <a href="tel:8816809191" class="hover:text-primary">8816809191</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <a href="mailto:info@gokuldhammahatirth.org" class="hover:text-primary">info@gokuldhammahatirth.org</a>
+                        </p>
+                    </div>
+                    
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-3 mt-6">
+                        <a href="https://www.facebook.com/gokuldhammahatirth" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/gokuldhamgdgsm?lang=en" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gokuldhammahatirth/" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/GokulDhamGauSewaMahatirth" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-primary transition duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition duration-300">Contact Us</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition duration-300">What's New</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Downloads</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Disclaimer</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Bank Details -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Bank Details</h3>
+                    <ul class="space-y-2">
+                        <li><strong>Name:</strong> Gokul Dham Gau Sewa Mahatirth</li>
+                        <li><strong>A/C No.:</strong> 918020104471089</li>
+                        <li><strong>IFSC Code:</strong> UTIB0000717</li>
+                        <li><strong>Branch Name:</strong> JHAJJAR</li>
+                        <li><strong>Bank Name:</strong> Axis Bank</li>
+                    </ul>
+                    
+                    <div class="mt-4">
+                        <img src="https://www.gokuldhammahatirth.org/assets_site/img/QR-Code100.jpg" alt="QR Code" class="h-32 mx-auto md:mx-0">
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter to get updates on our latest activities and events.</p>
+                    <form class="space-y-3">
+                        <input type="email" placeholder="Your Email Address" class="w-full px-4 py-2 rounded border bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded transition duration-300">
+                            Subscribe <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>© 2023 Gokuldham Gau Sewa Mahatirth. All rights reserved.</p>
+                <p class="mt-2">Design & Developed by <a href="https://www.sakshemit.com/" class="text-primary hover:underline">Sakshem IT Solution Pvt. Ltd.</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

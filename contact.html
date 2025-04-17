@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gokuldham Gau Sewa Mahatirth</title>
+    <meta name="description" content="Contact Gokuldham Gau Sewa Mahatirth for information about cow protection, donations, or to report cows in need of rescue.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e67e22',
+                        secondary: '#d35400',
+                        accent: '#f39c12'
+                    }
+                },
+                fontFamily: {
+                    sans: ['Poppins', 'sans-serif']
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-3xl font-bold text-primary">
+                        Gokuldham Gau Sewa Mahatirth
+                    </h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a></li>
+                        <li><a href="about.html" class="nav-link text-gray-700 hover:text-primary font-medium">About Us</a></li>
+                        <li><a href="blog.html" class="nav-link text-gray-700 hover:text-primary font-medium">What's New</a></li>
+                        <li><a href="gallery.html" class="nav-link text-gray-700 hover:text-primary font-medium">Gallery</a></li>
+                        <li><a href="video-gallery.html" class="nav-link text-gray-700 hover:text-primary font-medium">Videos</a></li>
+                        <li><a href="contact.html" class="nav-link text-gray-700 hover:text-primary font-medium">Contact Us</a></li>
+                        <li><a href="donation.html" class="donate-btn px-6 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300 ease-in-out transform hover:-translate-y-1">Donate Now</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars text-2xl text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="navbar-links md:hidden mt-4 hidden">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="index.html" class="block text-gray-700 hover:text-primary font-medium py-2">Home</a></li>
+                    <li><a href="about.html" class="block text-gray-700 hover:text-primary font-medium py-2">About Us</a></li>
+                    <li><a href="blog.html" class="block text-gray-700 hover:text-primary font-medium py-2">What's New</a></li>
+                    <li><a href="gallery.html" class="block text-gray-700 hover:text-primary font-medium py-2">Gallery</a></li>
+                    <li><a href="video-gallery.html" class="block text-gray-700 hover:text-primary font-medium py-2">Videos</a></li>
+                    <li><a href="contact.html" class="block text-gray-700 hover:text-primary font-medium py-2">Contact Us</a></li>
+                    <li><a href="donation.html" class="donate-btn inline-block px-6 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300 mt-2">Donate Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Get in touch with us for any inquiries or to report cows in need of rescue.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Information Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                        <form class="contact-form space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name*</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address*</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject*</label>
+                                <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message*</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="inline-block px-6 py-3 bg-primary text-white font-medium rounded-full hover:bg-secondary transition duration-300">
+                                    Send Message <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Address</h3>
+                                    <p class="text-gray-600">
+                                        GOKUL DHAM GAU SEWA MAHATIRTH<br>
+                                        NANGLA KUTANI ROAD DADRI TOE<br>
+                                        JHAJJAR, 124103<br>
+                                        HARYANA, INDIA
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Phone Numbers</h3>
+                                    <p class="text-gray-600">
+                                        <a href="tel:8199821024" class="hover:text-primary">8199821024</a>, <a href="tel:9459012222" class="hover:text-primary">9459012222</a><br>
+                                        <a href="tel:8816809191" class="hover:text-primary">8816809191</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Email</h3>
+                                    <p class="text-gray-600">
+                                        <a href="mailto:info@gokuldhammahatirth.org" class="hover:text-primary">info@gokuldhammahatirth.org</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl mr-4 flex-shrink-0">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Open Hours</h3>
+                                    <p class="text-gray-600">
+                                        Monday - Sunday: 9:00 AM - 6:00 PM<br>
+                                        Emergency Rescue: 24/7
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Social Media Links -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-3">Connect With Us</h3>
+                                <div class="flex space-x-4">
+                                    <a href="https://www.facebook.com/gokuldhammahatirth" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition duration-300">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://twitter.com/gokuldhamgdgsm?lang=en" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition duration-300">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/gokuldhammahatirth/" class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition duration-300">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/c/GokulDhamGauSewaMahatirth" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition duration-300">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Find Us</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Visit us at our location to see our work firsthand.</p>
+                </div>
+                
+                <!-- Map Embed (using Open Street Map as an alternative to Google Maps) -->
+                <div class="h-96 rounded-lg overflow-hidden shadow-lg">
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=76.60400390625%2C28.55%2C76.66000366211%2C28.65&amp;layer=mapnik&amp;marker=28.599%2C76.632" style="border: 1px solid #ddd"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Emergency Contact Section -->
+        <section class="py-12 bg-primary">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Emergency Cow Rescue</h2>
+                <p class="text-white text-lg mb-8 max-w-3xl mx-auto">
+                    If you see a cow in distress or need of immediate medical attention, please contact our emergency rescue team immediately.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="tel:8199821024" class="inline-flex items-center px-8 py-4 bg-white text-primary text-lg font-semibold rounded-full hover:bg-gray-100 transition duration-300">
+                        <i class="fas fa-phone-alt mr-2"></i> 8199821024
+                    </a>
+                    <a href="tel:9459012222" class="inline-flex items-center px-8 py-4 bg-white text-primary text-lg font-semibold rounded-full hover:bg-gray-100 transition duration-300">
+                        <i class="fas fa-phone-alt mr-2"></i> 9459012222
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>GOKUL DHAM GAU SEWA MAHATIRTH, NANGLA KUTANI ROAD DADRI TOE, JHAJJAR, 124103, HARYANA, INDIA</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <a href="tel:8199821024" class="hover:text-primary">8199821024, 9459012222</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <a href="tel:8816809191" class="hover:text-primary">8816809191</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <a href="mailto:info@gokuldhammahatirth.org" class="hover:text-primary">info@gokuldhammahatirth.org</a>
+                        </p>
+                    </div>
+                    
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-3 mt-6">
+                        <a href="https://www.facebook.com/gokuldhammahatirth" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/gokuldhamgdgsm?lang=en" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gokuldhammahatirth/" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/GokulDhamGauSewaMahatirth" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-primary transition duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition duration-300">Contact Us</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition duration-300">What's New</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Downloads</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Disclaimer</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Bank Details -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Bank Details</h3>
+                    <ul class="space-y-2">
+                        <li><strong>Name:</strong> Gokul Dham Gau Sewa Mahatirth</li>
+                        <li><strong>A/C No.:</strong> 918020104471089</li>
+                        <li><strong>IFSC Code:</strong> UTIB0000717</li>
+                        <li><strong>Branch Name:</strong> JHAJJAR</li>
+                        <li><strong>Bank Name:</strong> Axis Bank</li>
+                    </ul>
+                    
+                    <div class="mt-4">
+                        <img src="https://www.gokuldhammahatirth.org/assets_site/img/QR-Code100.jpg" alt="QR Code" class="h-32 mx-auto md:mx-0">
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter to get updates on our latest activities and events.</p>
+                    <form class="space-y-3">
+                        <input type="email" placeholder="Your Email Address" class="w-full px-4 py-2 rounded border bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded transition duration-300">
+                            Subscribe <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>© 2023 Gokuldham Gau Sewa Mahatirth. All rights reserved.</p>
+                <p class="mt-2">Design & Developed by <a href="https://www.sakshemit.com/" class="text-primary hover:underline">Sakshem IT Solution Pvt. Ltd.</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

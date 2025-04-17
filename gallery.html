@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Gokuldham Gau Sewa Mahatirth</title>
+    <meta name="description" content="Browse photos of Gokuldham Gau Sewa Mahatirth's cow rescue operations, medical treatments, and facility.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e67e22',
+                        secondary: '#d35400',
+                        accent: '#f39c12'
+                    }
+                },
+                fontFamily: {
+                    sans: ['Poppins', 'sans-serif']
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-3xl font-bold text-primary">
+                        Gokuldham Gau Sewa Mahatirth
+                    </h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a></li>
+                        <li><a href="about.html" class="nav-link text-gray-700 hover:text-primary font-medium">About Us</a></li>
+                        <li><a href="blog.html" class="nav-link text-gray-700 hover:text-primary font-medium">What's New</a></li>
+                        <li><a href="gallery.html" class="nav-link text-gray-700 hover:text-primary font-medium">Gallery</a></li>
+                        <li><a href="video-gallery.html" class="nav-link text-gray-700 hover:text-primary font-medium">Videos</a></li>
+                        <li><a href="contact.html" class="nav-link text-gray-700 hover:text-primary font-medium">Contact Us</a></li>
+                        <li><a href="donation.html" class="donate-btn px-6 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300 ease-in-out transform hover:-translate-y-1">Donate Now</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars text-2xl text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="navbar-links md:hidden mt-4 hidden">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="index.html" class="block text-gray-700 hover:text-primary font-medium py-2">Home</a></li>
+                    <li><a href="about.html" class="block text-gray-700 hover:text-primary font-medium py-2">About Us</a></li>
+                    <li><a href="blog.html" class="block text-gray-700 hover:text-primary font-medium py-2">What's New</a></li>
+                    <li><a href="gallery.html" class="block text-gray-700 hover:text-primary font-medium py-2">Gallery</a></li>
+                    <li><a href="video-gallery.html" class="block text-gray-700 hover:text-primary font-medium py-2">Videos</a></li>
+                    <li><a href="contact.html" class="block text-gray-700 hover:text-primary font-medium py-2">Contact Us</a></li>
+                    <li><a href="donation.html" class="donate-btn inline-block px-6 py-2 bg-primary text-white rounded-full hover:bg-secondary transition duration-300 mt-2">Donate Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Image Gallery</h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Explore our gallery showcasing the amazing work at Gokuldham Gau Sewa Mahatirth.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Categories Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Gallery Categories</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Browse through our various photo collections showcasing different aspects of our work.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Category 1 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/CattleAndBabies.jpg" alt="Cattle & Babies" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Cattle & Babies</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 2 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/Fracture.jpg" alt="Fracture & Cesarean operation" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Fracture & Cesarean Operations</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 3 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/AcidAttack.jpg" alt="Acid Attack" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Acid Attack Treatments</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 4 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/Automobile.jpg" alt="Ambulance" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Ambulance Services</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 5 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/ProlapseAndPregnancy.jpg" alt="Prolapse & Pregnancy" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Prolapse & Pregnancy</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 6 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/Camels.jpg" alt="Camels Treatment" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Camels Treatment</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 7 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/monkey.jpg" alt="Monkey Treatment" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Monkey Treatment</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 8 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/CampusShots.jpg" alt="Gaushala" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Gaushala Campus</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 9 -->
+                    <div class="gallery-category rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://www.gokuldhammahatirth.org/gallery/GalleryCategory/GuestVisit.jpg" alt="Event & Occasion" class="w-full h-56 object-cover transition duration-300 hover:scale-110">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800 text-center">Events & Occasions</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Gallery Section - Cattle & Babies -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Cattle & Babies</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Our cows and their calves living peacefully in our shelter.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://images.pexels.com/photos/2265247/pexels-photo-2265247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cow and calf" class="w-full h-64 object-cover">
+                        <div class="gallery-overlay p-4">
+                            <h3 class="text-lg font-semibold">Mother and Calf</h3>
+                            <p class="text-sm">A rescued cow with her newborn calf</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://images.pexels.com/photos/2182561/pexels-photo-2182561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cow grazing" class="w-full h-64 object-cover">
+                        <div class="gallery-overlay p-4">
+                            <h3 class="text-lg font-semibold">Grazing in Peace</h3>
+                            <p class="text-sm">Healthy cows grazing in our shelter</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://images.pexels.com/photos/372166/pexels-photo-372166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Calf" class="w-full h-64 object-cover">
+                        <div class="gallery-overlay p-4">
+                            <h3 class="text-lg font-semibold">Young Calf</h3>
+                            <p class="text-sm">A healthy calf born in our shelter</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://images.pexels.com/photos/162801/cows-dairy-cows-milk-cows-162801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Multiple cows" class="w-full h-64 object-cover">
+                        <div class="gallery-overlay p-4">
+                            <h3 class="text-lg font-semibold">Herd of Cows</h3>
+                            <p class="text-sm">Our rescued cows living together</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://images.pexels.com/photos/2306938/pexels-photo-2306938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cow portrait" class="w-full h-64 object-cover">
+                        <div class="gallery-overlay p-4">
+                            <h3 class="text-lg font-semibold">Gentle Soul</h3>
+                            <p class="text-sm">A rescued cow recovering in our shelter</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://images.pexels.com/photos/2069813/pexels-photo-2069813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cows eating" class="w-full h-64 object-cover">
+                        <div class="gallery-overlay p-4">
+                            <h3 class="text-lg font-semibold">Feeding Time</h3>
+                            <p class="text-sm">Cows enjoying their nutritious meal</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://images.pexels.com/photos/6152103/pexels-photo-6152103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cow being patted" class="w-full h-64 object-cover">
+                        <div class="gallery-overlay p-4">
+                            <h3 class="text-lg font-semibold">Loving Care</h3>
+                            <p class="text-sm">Our volunteers caring for the cows</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item A -->
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                        <img src="https://images.pexels.com/photos/615349/cow-highland-cattle-calf-mother-615349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mother and calf" class="w-full h-64 object-cover">
+                        <div class="gallery-overlay p-4">
+                            <h3 class="text-lg font-semibold">Mother's Love</h3>
+                            <p class="text-sm">The special bond between cow and calf</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View More Button -->
+                <div class="text-center mt-8">
+                    <a href="#" class="inline-block px-6 py-3 bg-primary text-white rounded-full hover:bg-secondary transition duration-300">
+                        Load More Photos <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Lightbox for Gallery (Hidden by default) -->
+        <div class="lightbox fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center">
+            <button class="lightbox-close absolute top-6 right-6 text-white text-4xl hover:text-primary transition duration-300">&times;</button>
+            <button class="lightbox-prev absolute left-6 text-white text-4xl hover:text-primary transition duration-300">&#10094;</button>
+            <button class="lightbox-next absolute right-6 text-white text-4xl hover:text-primary transition duration-300">&#10095;</button>
+            <div class="lightbox-content max-w-4xl max-h-full mx-auto px-4">
+                <img src="" alt="Gallery image" class="lightbox-image max-w-full max-h-[85vh] mx-auto">
+                <div class="lightbox-caption text-white text-center mt-4 text-lg"></div>
+            </div>
+        </div>
+        
+        <!-- Call to Action Section -->
+        <section class="py-16 bg-primary">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Support Our Mission</h2>
+                <p class="text-white text-lg mb-8 max-w-3xl mx-auto">
+                    Your contribution can help us continue our mission of providing care and treatment to thousands of cows across India. Every donation, big or small, makes a difference.
+                </p>
+                <a href="donation.html" class="inline-block px-8 py-4 bg-white text-primary text-lg font-semibold rounded-full hover:bg-gray-100 transition duration-300 transform hover:-translate-y-1">
+                    Donate Now <i class="fas fa-heart ml-2"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+                            <span>GOKUL DHAM GAU SEWA MAHATIRTH, NANGLA KUTANI ROAD DADRI TOE, JHAJJAR, 124103, HARYANA, INDIA</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <a href="tel:8199821024" class="hover:text-primary">8199821024, 9459012222</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-primary"></i>
+                            <a href="tel:8816809191" class="hover:text-primary">8816809191</a>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-primary"></i>
+                            <a href="mailto:info@gokuldhammahatirth.org" class="hover:text-primary">info@gokuldhammahatirth.org</a>
+                        </p>
+                    </div>
+                    
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-3 mt-6">
+                        <a href="https://www.facebook.com/gokuldhammahatirth" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/gokuldhamgdgsm?lang=en" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gokuldhammahatirth/" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/c/GokulDhamGauSewaMahatirth" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-primary transition duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition duration-300">Contact Us</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition duration-300">What's New</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Downloads</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Disclaimer</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Bank Details -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Bank Details</h3>
+                    <ul class="space-y-2">
+                        <li><strong>Name:</strong> Gokul Dham Gau Sewa Mahatirth</li>
+                        <li><strong>A/C No.:</strong> 918020104471089</li>
+                        <li><strong>IFSC Code:</strong> UTIB0000717</li>
+                        <li><strong>Branch Name:</strong> JHAJJAR</li>
+                        <li><strong>Bank Name:</strong> Axis Bank</li>
+                    </ul>
+                    
+                    <div class="mt-4">
+                        <img src="https://www.gokuldhammahatirth.org/assets_site/img/QR-Code100.jpg" alt="QR Code" class="h-32 mx-auto md:mx-0">
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter to get updates on our latest activities and events.</p>
+                    <form class="space-y-3">
+                        <input type="email" placeholder="Your Email Address" class="w-full px-4 py-2 rounded border bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded transition duration-300">
+                            Subscribe <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>© 2023 Gokuldham Gau Sewa Mahatirth. All rights reserved.</p>
+                <p class="mt-2">Design & Developed by <a href="https://www.sakshemit.com/" class="text-primary hover:underline">Sakshem IT Solution Pvt. Ltd.</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
